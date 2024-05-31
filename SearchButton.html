@@ -1,0 +1,28 @@
+<!--create a search button and go to the Google page if the search button is clicked.-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Meta information for character set and viewport -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Title of the document -->
+    <title>Search Page</title>
+</head>
+<body>
+    <!-- Heading for the page -->
+    <h1>Search Page</h1>
+
+    <!-- Search Form with Google Search Button -->
+    <form action="https://www.google.com/search" method="get" target="_blank">
+        <!-- Label for the search input -->
+        <label for="searchQuery">Enter your search query:</label>
+        
+        <!-- Input field for the search query -->
+        <input type="text" id="searchQuery" name="q" required>
+        
+        <!-- Button for submitting the form and initiating Google Search -->
+        <button type="submit">Google Search</button>
+    </form>
+</body>
+</html>

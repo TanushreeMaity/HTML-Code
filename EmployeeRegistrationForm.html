@@ -1,0 +1,129 @@
+<!--Q1)write HTML code to create a Employee Registration form-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Meta information for character set and viewport -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Title of the document -->
+    <title>Employee Registration Form</title>
+
+    <!-- Internal Styles -->
+    <style>
+        /* Global styles for the body */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Container styling */
+        .container {
+            width: 50%;
+            margin: auto;
+            overflow: hidden;
+        }
+
+        /* Heading 2 styling */
+        h2 {
+            text-align: center;
+        }
+
+        /* Form styling */
+        form {
+            padding: 20px;
+            background-color: #ffffff;
+            margin-top: 10px;
+            border-radius: 10px;
+        }
+
+        /* Label styling */
+        label {
+            display: block;
+            margin: 15px 0 5px 0;
+        }
+
+        /* Input and Select styling */
+        input,
+        select {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+
+        /* Button styling */
+        button {
+            background-color: #4caf50;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            float: right;
+        }
+
+        /* Button hover effect */
+        button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+
+<!-- Main container for the form -->
+<div class="container">
+
+    <!-- Heading for the form -->
+    <h2>Employee Registration Form</h2>
+
+    <!-- Actual Form -->
+    <form action="#" method="post">
+
+        <!-- First Name Input -->
+        <label for="firstName">First Name:</label>
+        <input type="text" id="firstName" name="firstName" required>
+
+        <!-- Last Name Input -->
+        <label for="lastName">Last Name:</label>
+        <input type="text" id="lastName" name="lastName" required>
+
+        <!-- Email Input -->
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+
+        <!-- Phone Input -->
+        <label for="phone">Phone:</label>
+        <input type="tel" id="phone" name="phone" required>
+
+        <!-- Department Selection -->
+        <label for="department">Department:</label>
+        <select id="department" name="department">
+            <option value="hr">Human Resources</option>
+            <option value="it">Information Technology</option>
+            <option value="finance">Finance</option>
+            <!-- Add more options as needed -->
+        </select>
+
+        <!-- Gender Selection -->
+        <label for="gender">Gender:</label>
+        <input type="radio" id="male" name="gender" value="male" checked>
+        <label for="male">Male</label>
+        <input type="radio" id="female" name="gender" value="female">
+        <label for="female">Female</label>
+
+        <!-- Date of Birth Input -->
+        <label for="dob">Date of Birth:</label>
+        <input type="date" id="dob" name="dob" required>
+
+        <!-- Submit Button -->
+        <button type="submit">Submit</button>
+    </form>
+</div>
+
+</body>
+</html>
